@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-  const frontend_url = process.env.FRONTEND_URL || "http://localhost:5174";
+  const frontend_url = process.env.FRONTEND_URL || "https://foodexpress-frontend-wlks.onrender.com/";
 
   try {
     const userId = req.body.userId;
