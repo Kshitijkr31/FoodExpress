@@ -5,7 +5,7 @@ import profile_image from './profile_image.png'
 import parcel_icon from './parcel_icon.png'
 import pngegg from './pngegg.png'
 
-export const assets ={
+export const assets = {
     logo,
     add_icon,
     order_icon,
@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://localhost:4000'
+export const url = 'https://foodexpress-backend-6h9n.onrender.com'  // Update here
