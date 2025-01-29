@@ -2,7 +2,7 @@ import React
 // , { useEffect } 
 from 'react'
 import './Navbar.css'
-import {assets} from '../../assets'
+import {assets} from '../../assets/assets'
 
 const Navbar = () => {
 //   useEffect(() => {
