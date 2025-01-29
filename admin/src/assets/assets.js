@@ -15,3 +15,4 @@ export const assets = {
 }
 
 export const url = 'https://foodexpress-backend-6h9n.onrender.com'  // Update here
+// export const url = 'https://localhost:4000'  // Update here
