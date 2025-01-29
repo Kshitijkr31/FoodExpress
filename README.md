@@ -1,6 +1,6 @@
-**FoodExpress - Online Food Ordering Platform
+**FoodExpress - Online Food Ordering Platform**
 
-Overview**
+**Overview**
 
 FoodExpress is a comprehensive online food ordering and delivery platform developed using the MERN Stack (MongoDB, Express.js, React.js, Node.js). The platform enables users to browse restaurants, order food, make online payments via Stripe, and track their orders efficiently. The project is designed to offer a seamless experience for both customers and restaurant administrators.
 
