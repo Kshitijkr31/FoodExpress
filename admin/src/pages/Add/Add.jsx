@@ -3,7 +3,7 @@ import React
 useState } 
 from 'react'
 import './Add.css'
-import { assets } from '../../assets/admin_assets/assets'
+import { assets } from '../../assets'
 import axios from "axios"
 import { ToastContainer, toast } from 'react-toastify';
 

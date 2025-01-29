@@ -4,7 +4,7 @@ from 'react'
 import './Orders.css'
 import {toast} from "react-toastify"
 import axios from "axios"
-import {assets} from "../../assets/admin_assets/assets"
+import {assets} from "../../assets"
 
 const Orders = (
     {url}
