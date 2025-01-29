@@ -1,16 +1,16 @@
-FoodExpress - Online Food Ordering Platform
+**FoodExpress - Online Food Ordering Platform
 
-Overview
+Overview**
 
 FoodExpress is a comprehensive online food ordering and delivery platform developed using the MERN Stack (MongoDB, Express.js, React.js, Node.js). The platform enables users to browse restaurants, order food, make online payments via Stripe, and track their orders efficiently. The project is designed to offer a seamless experience for both customers and restaurant administrators.
 
-Live Demo
+**Live Demo**
 
-Frontend: [FoodExpress Frontend](https://foodexpress-frontend-wlks.onrender.com/)
+**Frontend:** [FoodExpress Frontend](https://foodexpress-frontend-wlks.onrender.com/)
 
-Backend: [FoodExpress Backend](https://foodexpress-ztha.onrender.com/)
+**Backend:** [FoodExpress Backend](https://foodexpress-ztha.onrender.com/)
 
-Features
+**Features**
 
 🔹 Customer Features
 
@@ -38,12 +38,12 @@ Tech Stack
 
 
 
-1️⃣ Clone the Repository
+1️⃣** Clone the Repository**
 
 $ git clone https://github.com/your-username/FoodExpress.git
 $ cd FoodExpress
 
-2️⃣ Backend Setup
+2️⃣** Backend Setup**
 
 $ cd backend
 $ npm install
@@ -68,9 +68,9 @@ $ npm install
 $ npm run dev
 
 
-Contributors
+**Contributors
 
-Kshitij (Developer) - GitHub
+Kshitij (Developer) - GitHub**
 
 License
 
