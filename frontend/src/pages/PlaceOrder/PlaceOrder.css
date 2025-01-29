@@ -1,0 +1,144 @@
+.place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.place-order-left{
+    width: 100%;
+    margin-top: -6rem;
+    max-width: max(30%, 500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+.place-order .cart-total button{
+    margin-top: 30px;
+}
+
+:root .emaill {
+    background-color: #ffffff;
+}
+:root .emaill{
+    color: rgb(0, 0, 0);
+}
+
+:root .streett {
+    background-color: #ffffff;
+}
+:root .streett{
+    color: rgb(0, 0, 0);
+}
+
+:root .phonee {
+    background-color: #ffffff;
+}
+:root .phonee{
+    color: rgb(0, 0, 0);
+}
+
+.emaill::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.streett::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.phonee::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+/* Ensure text color remains proper in light mode */
+.lightcolors .emaill::placeholder {
+    color: black;
+}
+
+.lightcolors .streett::placeholder {
+    color: black;
+}
+
+.lightcolors .phonee::placeholder {
+    color: black;
+}
+
+.lightcolors .emaill {
+    background-color: white;
+}
+.lightcolors .emaill{
+    color: black;
+}
+
+.lightcolors .streett {
+    background-color: white;
+}
+.lightcolors .streett{
+    color: black;
+}
+
+.lightcolors .phonee {
+    background-color: white;
+}
+.lightcolors .phonee{
+    color: black;
+}
+
+
+:root .multi-fields input {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); 
+}
+
+:root .multi-fields input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+
+.lightcolors .multi-fields input {
+    background-color: white;
+    color: black;
+}
+.lightcolors .multi-fields input::placeholder {
+    color: black;
+}
+
+
+:root .title {
+    color: rgb(0, 0, 0);
+}
+
+.lightcolors .title {
+    color: black;
+}
+
+@media (max-width:750px) {
+ 
+    .place-order{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    
+}
