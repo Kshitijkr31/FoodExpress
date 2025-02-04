@@ -8,7 +8,7 @@ FoodExpress is a comprehensive online food ordering and delivery platform develo
 
 **Frontend:** [FoodExpress Frontend](https://foodexpress-frontend-wlks.onrender.com/)
 
-**Backend:** [FoodExpress Backend](https://foodexpress-ztha.onrender.com/)
+**Admin Panel:** [FoodExpress Admin Panel](https://foodexpress-ztha.onrender.com/)
 
 **Features**
 
