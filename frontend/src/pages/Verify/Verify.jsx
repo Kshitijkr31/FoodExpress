@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Verify.css';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useContext } from 'react';
@@ -9,26 +9,40 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Verify = () => {
     const [searchParams] = useSearchParams();
-    const success = searchParams.get("success");
+    const success = searchParams.get("success") === "true";  // Convert to boolean
     const orderId = searchParams.get("orderId");
     const { url } = useContext(StoreContext);
     const navigate = useNavigate();
 
+    // State for showing messages
+    const [message, setMessage] = useState("Verifying Payment...");
+    const [loading, setLoading] = useState(true);
+
     const verifyPayment = async () => {
         try {
+            if (!orderId) {
+                setMessage("⚠️ Invalid Order ID. Redirecting...");
+                setTimeout(() => navigate("/"), 3000);
+                return;
+            }
+
             const response = await axios.post(url + "/api/order/verify", { success, orderId });
+
             if (response.data.success) {
-                toast.success("🎉 Your order has been placed!", { autoClose: 2000 });  // ✅ Order placed message
-                setTimeout(() => {
-                    navigate("/myorders");
-                }, 2000);  // ✅ Wait for the toast to be visible before redirecting
+                setMessage("🎉 Order Placed Successfully!");
+                toast.success("🎉 Your order has been placed!", { autoClose: 2000 });
+                setTimeout(() => navigate("/myorders"), 3000);
             } else {
+                setMessage("❌ Payment Verification Failed!");
                 toast.error("❌ Payment verification failed!", { autoClose: 2000 });
-                navigate("/");
+                setTimeout(() => navigate("/"), 3000);
             }
         } catch (error) {
+            setMessage("⚠️ Something went wrong! Please try again.");
             toast.error("⚠️ Something went wrong!", { autoClose: 2000 });
-            navigate("/");
+            setTimeout(() => navigate("/"), 3000);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -38,7 +52,7 @@ const Verify = () => {
 
     return (
         <div className='verify'>
-            <div className="spinner"></div>
+            {loading ? <div className="spinner"></div> : <h2>{message}</h2>}
         </div>
     );
 };
